@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su-kien-chuot</title>
+</head>
+<body>
+<form>
+    <img id ="image" src="quabong.jpg"/>
+    <p>Nhan chuot vao day de di chuyen qua bong sang ben phai</p>
+    <input type = "button" value="Nhanvaodayanhoi" onclick="moveright();"/>
+</form>
+<script>
+    let imgob = null;
+    imgob = document.getElementById('image');
+    function init() {
+        imgob = document.getElementById('image');
+        imgob.style.position = 'relative';
+        imgob.style.left = '0px';
+        
+    }
+    function moveright() {
+        imgob.style.left = parseInt(imgob.style.left) + 10 +'px';
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
